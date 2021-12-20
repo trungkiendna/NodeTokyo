@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "name": "kientest",
+      "phone": "0905963998",
+      "username": "kien123",
+      "password": "123456",
+      "id": "DVovzrtsB"
+    },
+    {
+      "name": "đạt",
+      "phone": "0775123456",
+      "username": "dat.do1",
+      "password": "123456",
+      "id": "8jFgwW74k"
+    },
+    {
+      "name": "Kiên Automation",
+      "phone": "0911123456",
+      "username": "kien1234",
+      "password": "123456",
+      "id": "Vyaxnm7sx"
+    },
+    {
+      "name": "Kiên Test",
+      "phone": "0913456854",
+      "username": "Năm Cam",
+      "password": "123456",
+      "id": "olCcje1W9"
+    },
+    {
+      "name": "Node Express",
+      "phone": "123456789",
+      "username": "amen",
+      "password": "123456",
+      "id": "srvVljtaT"
+    },
+    {
+      "name": "Fuck",
+      "phone": "0965485485",
+      "username": "kien.nguyen",
+      "password": "123456",
+      "id": "PaHIv0ymI"
+    }
+  ]
+}

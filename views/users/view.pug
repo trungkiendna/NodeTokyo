@@ -1,0 +1,34 @@
+extends ../layout/common
+block content
+  .container-fluid.my-5
+      .row
+        .col-8.offset-2
+          .card
+            .card-header.bg-primary.text-white.text-uppercase Users
+            .card-body
+              form.seach-form(action="/users/search")
+                .container
+                  h2 Searching
+                  .row
+                    .col-12
+                      .form-group
+                        label(for='name') Name
+                        input#name.form-control(name="q", type='search')
+                    .col-12
+                      button.btn.btn-primary(type='submit') Search
+
+              .users.my-3 
+                h2.text-center.text-info.my-3 All users
+                  table.table.table-bordered
+                    thead
+                      tr.bg-info.text-white
+                        th  Name
+                        th  Phone
+                        th  Username 
+                    tbody
+                        tr
+                          td=  user.name 
+                          td=  user.phone
+                          td=  user.username 
+
+              a.btn.btn-primary(href="/users") Back

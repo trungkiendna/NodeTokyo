@@ -1,0 +1,27 @@
+extends ../layout/common
+
+block content
+  
+  if errors
+    each error in errors
+      .alert.alert-danger.mt-2= error
+
+  .container-fluid.bg-light.text-dark.h-100
+    .row.justify-content-center.align-items-center
+      h1 Login Page
+    hr
+    .row.justify-content-center.align-items-center
+      .col.col-sm-6.col-md-6.col-lg-4.col-xl-3
+        form(method="POST")
+          .form-group
+            label(for="username") Username
+            input#username.form-control(name="username", type="text", value=values ? values.username : "")
+          .form-group
+            label(for="password") Password
+            input#password.form-control(name="password", type="password", value=values ? values.password : "")    
+
+            .form-group
+          .container
+            .row
+              .col
+                button.col-8.ml-5.btn.btn-primary.btn-sm Login

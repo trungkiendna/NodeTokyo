@@ -1,0 +1,35 @@
+extends ../layout/common
+
+block content
+
+  if errors
+    each error in errors
+      .alert.alert-danger.mt-2= error
+
+  .container-fluid.bg-light.text-dark
+  .row.justify-content-center.align-items-center
+    h1 Register
+  hr
+  .row.justify-content-center.align-items-center
+    .col.col-sm-6.col-md-6.col-lg-4.col-xl-3
+      form(action="/users/create", method="POST")
+        .form-group
+          label(for="name") Full name
+          input#name.form-control(type='text' name="name", value=values ? values.name : "")
+        .form-group
+          label(for="phone") Phone Number
+          input#phone.form-control(type='number' name="phone", value=values ? values.phone : "")  
+        .form-group
+          label(for="username") Username
+          input#username.form-control(type='text' name="username", value=values ? values.username : "")
+        .form-group
+          label(for="password") Password
+          input#password.form-control(type='password' name="password", value=values ? values.password : "")  
+        .form-group
+          .container
+            .row
+              .col
+                button.col-10.btn.btn-primary.btn-sm Submit
+              .col
+                button.col-10.btn.btn-secondary.btn-sm(type="reset") Reset
+
